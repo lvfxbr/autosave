@@ -1,0 +1,20 @@
+{
+    "name": "draft-autosave",
+    "version": "0.1.0",
+    "license": "MIT",
+    "scripts": {
+        "clear:repos": "rimraf repos",
+        "clear:logs": "rimraf log.txt",
+        "clear:all": "npm run clear:repos && npm run clear:logs"
+    },
+    "bin": {
+        "autosave": "index.js"
+    },
+    "dependencies": {
+        "commander": "^9.2.0",
+        "fs-extra": "^10.0.1"
+    },
+    "devDependencies": {
+        "rimraf": "^3.0.2"
+    }
+}
